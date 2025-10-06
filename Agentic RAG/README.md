@@ -21,13 +21,13 @@ Create and activate a virtual environment:
 
 ## Components
 
-1. RAG: Uses FAISS for vector storage and sentence transformers for embeddings.
-2. Agentic AI: Leverages LangChain agents to execute tasks with RAG as a tool.
-3. LCM: Uses a transformer model (e.g., distilgpt2) for large context generation.
+1. **RAG:** Uses **FAISS** for vector storage and sentence transformers for **embeddings.**
+2. **Agentic AI:** Leverages **LangChain** agents to execute tasks with **RAG** as a tool.
+3. **LCM:** Uses a **transformer model** (e.g., distilgpt2) for large context generation.
 
 ## Notes
 
-- Replace distilgpt2 with a larger model (e.g., gpt2-large) for better LCM performance if hardware allows.
-- Ensure sufficient memory for large context models.
-- Add more data to data/sample_data.txt for richer RAG results.
+- Replace **distilgpt2** with a larger model (e.g., gpt2-large) for better LCM performance if hardware allows.
+- Ensure sufficient memory for **large context models**.
+- Add more data to data/sample_data.txt for richer **RAG** results.
 
