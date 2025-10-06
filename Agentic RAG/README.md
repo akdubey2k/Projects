@@ -1,6 +1,6 @@
-**_RAG + Agentic AI + LCM Project Setup_**
-Retrieval-Augmented Generation (RAG) system combined with Agentic AI and a Large Context Model (LCM).
-Project leveraging libraries like _LangChain for RAG_, agentic workflows, and Hugging Face transformers for a large context model. The project will include a simple RAG pipeline, an agentic AI component for task execution, and integration with a model capable of handling large contexts (e.g., a transformer model with a large context window)
+# RAG + Agentic AI + LCM Project Setup
+**Retrieval-Augmented Generation (RAG)** system combined with **Agentic AI** and a **Large Context Model (LCM)**.
+Project leveraging libraries like **LangChain** for _RAG, agentic workflows, and Hugging Face transformers for a large context model._ The project will include a simple RAG pipeline, an agentic AI component for task execution, and integration with a model capable of handling large contexts (e.g., a transformer model with a large context window)
 
 RAG + Agentic AI + LCM Project
 This project implements a Retrieval-Augmented Generation (RAG) system with an agentic AI workflow and a Large Context Model (LCM) using Python, LangChain, and Hugging Face transformers.
