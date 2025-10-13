@@ -17,9 +17,28 @@ import warnings
 # text generation, predicting the next token in a sequence.
 from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 
+# The LargeContextModel class encapsulates the loading and usage of a causal language model (e.g.,
+# DistilGPT-2) for generating text based on prompts. It provides a clean interface for model 
+# initialization, loading, and text generation, making it reusable in applications like the 
+# AgenticAI class or a RAG system.
 class LargeContextModel:
+
+    # The constructor initializes the class by storing the model name and setting the pipeline 
+    # attribute to None, deferring model loading until explicitly requested.
     def __init__(self, model_name="distilgpt2"):
+
+        # The model_name specifies the Hugging Face model to use (e.g., "distilgpt2", "gpt2", or 
+        # "mistralai/Mixtral-8x7B-v0.1"). It allows flexibility to choose different models without 
+        # changing the class’s code. Default to "distilgpt2": is a lightweight, distilled version 
+        # of GPT-2 with 82 million parameters, offering a balance of performance and resource 
+        # efficiency. It’s suitable for development, testing, or resource-constrained environments 
+        # (e.g., CPU-only setups), making it a reasonable default for prototyping or small-scale 
+        # applications.
         self.model_name = model_name
+
+        # self.pipeline = None: Initializing pipeline as None defers the resource-intensive process 
+        # of loading the model until the load_model method is called. This lazy initialization 
+        # avoids unnecessary memory or CPU usage during class instantiation.
         self.pipeline = None
 
     def load_model(self):
