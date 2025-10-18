@@ -2,7 +2,7 @@ langchain==0.3.0
 langchain-community==0.3.0
 langchain-huggingface==0.1.0
 langchainhub==0.1.21
-transformers==4.45.2
+transformers==4.53.0
 faiss-cpu==1.9.0
 sentence-transformers==3.0.1
 torch==2.3.1
